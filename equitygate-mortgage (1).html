@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equity Gate Mortgage — Loan Against Property UAE</title>
+<meta name="description" content="Equity Gate Mortgage — Dubai's specialist equity release and loan against property broker. Access up to 80% of your property's value. Residents & non-residents welcome.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:   #0B1F3A;
+  --navy2:  #0F2847;
+  --blue:   #1A5FA8;
+  --blue2:  #2272C3;
+  --gold:   #B8912A;
+  --gold2:  #D4A93A;
+  --cream:  #F8F5EE;
+  --cream2: #EDE9DF;
+  --warm:   #F2EDE3;
+  --text:   #1C1A17;
+  --muted:  #6B6456;
+  --white:  #FFFFFF;
+  --border: rgba(11,31,58,0.12);
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-body:    'Inter', system-ui, sans-serif;
+  --ff-arabic:  'Noto Kufi Arabic', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-body);color:var(--text);background:var(--white);overflow-x:hidden}
+body.rtl{direction:rtl;font-family:var(--ff-arabic)}
+
+/* ── LANG TOGGLE ── */
+.lang-bar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--navy);padding:8px 40px;display:flex;justify-content:flex-end;align-items:center;gap:12px}
+.lang-btn{background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.7);font-size:12px;font-family:var(--ff-body);padding:4px 14px;border-radius:20px;cursor:pointer;letter-spacing:0.05em;transition:all .2s}
+.lang-btn.active{background:var(--gold);border-color:var(--gold);color:var(--navy);font-weight:600}
+
+/* ── NAV ── */
+nav{position:fixed;top:33px;left:0;right:0;z-index:999;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:70px;background:rgba(11,31,58,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,145,42,0.2)}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo-icon{width:38px;height:38px;flex-shrink:0;position:relative}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1}
+.nav-logo-main{font-family:var(--ff-display);font-size:20px;font-weight:600;color:var(--white);letter-spacing:0.01em;line-height:1.1}
+.nav-logo-sub{font-family:var(--ff-body);font-size:8.5px;letter-spacing:0.22em;color:var(--gold);text-transform:uppercase;margin-top:3px;font-weight:500}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:13px;letter-spacing:0.04em;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--navy);font-size:13px;font-weight:600;padding:10px 24px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;transition:background .2s}
+.nav-cta:hover{background:var(--gold2)}
+
+/* ── HERO ── */
+.hero{min-height:100vh;background:var(--navy);position:relative;overflow:hidden;display:flex;align-items:center;padding-top:103px}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0B1F3A 0%,#0F2D50 40%,#0B2240 70%,#070F1C 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(184,145,42,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(184,145,42,0.04) 1px,transparent 1px);background-size:60px 60px;opacity:0.6}
+.hero-glow{position:absolute;right:-10%;top:10%;width:600px;height:600px;background:radial-gradient(circle,rgba(26,95,168,0.25) 0%,transparent 70%);pointer-events:none}
+.hero-glow2{position:absolute;left:-5%;bottom:0%;width:400px;height:400px;background:radial-gradient(circle,rgba(184,145,42,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:24px}
+.hero-eyebrow-line{width:40px;height:1px;background:var(--gold)}
+.hero-eyebrow span{font-size:11px;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;font-weight:500}
+.hero h1{font-family:var(--ff-display);font-size:clamp(40px,5vw,64px);font-weight:600;color:var(--white);line-height:1.1;margin-bottom:24px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:16px;color:rgba(255,255,255,0.65);line-height:1.7;margin-bottom:40px;max-width:480px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{background:var(--gold);color:var(--navy);font-weight:700;font-size:14px;padding:16px 32px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;transition:all .2s;display:inline-block}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:var(--white);font-size:14px;padding:15px 32px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;transition:all .2s;display:inline-block}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.08);border-radius:8px;overflow:hidden;margin-top:50px}
+.hero-stat{background:rgba(255,255,255,0.04);padding:20px 16px;text-align:center}
+.hero-stat-val{font-family:var(--ff-display);font-size:26px;font-weight:700;color:var(--gold);display:block}
+.hero-stat-lbl{font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:0.06em;margin-top:4px}
+.hero-right{position:relative}
+.hero-card{background:rgba(255,255,255,0.05);border:1px solid rgba(184,145,42,0.2);border-radius:12px;padding:36px;backdrop-filter:blur(10px)}
+.hero-card-title{font-family:var(--ff-display);font-size:20px;color:var(--white);margin-bottom:24px;font-weight:500}
+.hero-form-group{margin-bottom:16px}
+.hero-form-group label{display:block;font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px}
+.hero-form-group input,.hero-form-group select{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:12px 14px;color:var(--white);font-size:14px;font-family:var(--ff-body);outline:none;transition:border .2s}
+.hero-form-group input:focus,.hero-form-group select:focus{border-color:var(--gold)}
+.hero-form-group select option{background:var(--navy);color:var(--white)}
+.hero-card .btn-primary{width:100%;text-align:center;margin-top:8px;font-size:15px;padding:16px}
+.hero-card-note{font-size:11px;color:rgba(255,255,255,0.35);text-align:center;margin-top:12px}
+.hero-card-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(184,145,42,0.15);border:1px solid rgba(184,145,42,0.3);border-radius:20px;padding:4px 12px;font-size:11px;color:var(--gold);margin-bottom:20px}
+.dot-pulse{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+/* ── TRUST BAR ── */
+.trust-bar{background:var(--cream2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 40px;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);letter-spacing:0.04em}
+.trust-item svg{flex-shrink:0;opacity:0.6}
+
+/* ── SECTIONS ── */
+section{padding:100px 40px}
+.container{max-width:1200px;margin:0 auto}
+.section-label{font-size:11px;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;font-weight:500;margin-bottom:12px}
+.section-title{font-family:var(--ff-display);font-size:clamp(32px,4vw,52px);font-weight:600;color:var(--navy);line-height:1.15;margin-bottom:20px}
+.section-title em{font-style:italic;color:var(--blue)}
+.section-sub{font-size:16px;color:var(--muted);line-height:1.7;max-width:560px}
+
+/* ── HOW IT WORKS ── */
+.how{background:var(--cream)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:60px}
+.step{background:var(--white);padding:36px 28px;position:relative}
+.step:first-child{border-radius:8px 0 0 8px}
+.step:last-child{border-radius:0 8px 8px 0}
+.step-num{font-family:var(--ff-display);font-size:56px;font-weight:700;color:var(--cream2);line-height:1;margin-bottom:16px;display:block}
+.step-title{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.step-desc{font-size:13.5px;color:var(--muted);line-height:1.6}
+.step-accent{width:32px;height:2px;background:var(--gold);margin-bottom:20px}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
+.service-card{background:var(--cream);border-radius:8px;padding:36px;transition:all .3s;cursor:default;border:1px solid transparent}
+.service-card:hover{background:var(--white);border-color:var(--border);box-shadow:0 12px 48px rgba(11,31,58,0.08);transform:translateY(-3px)}
+.service-icon{width:48px;height:48px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.service-icon svg{opacity:0.9}
+.service-title{font-size:18px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.service-desc{font-size:14px;color:var(--muted);line-height:1.7}
+.service-link{display:inline-block;margin-top:16px;font-size:13px;color:var(--blue);font-weight:500;letter-spacing:0.02em}
+
+/* ── ELIGIBILITY ── */
+.eligibility{background:var(--navy);color:var(--white)}
+.eligibility .section-title{color:var(--white)}
+.eligibility .section-sub{color:rgba(255,255,255,0.6)}
+.elig-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:60px}
+.elig-col{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:36px}
+.elig-col-title{font-family:var(--ff-display);font-size:22px;color:var(--gold);margin-bottom:24px;font-weight:500}
+.elig-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.elig-list li{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,0.75);line-height:1.5}
+.elig-check{width:20px;height:20px;background:rgba(184,145,42,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.elig-check::after{content:'';width:8px;height:5px;border-left:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(-45deg) translate(1px,-1px)}
+.ltv-bar-wrap{margin-top:40px}
+.ltv-label{display:flex;justify-content:space-between;font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.ltv-track{height:8px;background:rgba(255,255,255,0.1);border-radius:4px;overflow:hidden}
+.ltv-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+
+/* ── CALC ── */
+.calc-section{background:var(--cream)}
+.calc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:60px}
+.calc-card{background:var(--white);border-radius:12px;padding:40px;box-shadow:0 8px 40px rgba(11,31,58,0.08)}
+.calc-group{margin-bottom:24px}
+.calc-group label{display:block;font-size:12px;font-weight:500;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px}
+.calc-group input[type=range]{width:100%;appearance:none;height:4px;background:var(--cream2);border-radius:2px;outline:none;cursor:pointer}
+.calc-group input[type=range]::-webkit-slider-thumb{appearance:none;width:18px;height:18px;background:var(--navy);border-radius:50%;cursor:pointer}
+.range-val{font-family:var(--ff-display);font-size:28px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.calc-result{background:var(--navy);border-radius:10px;padding:30px;margin-top:24px}
+.calc-result-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+.calc-result-row:last-child{border-bottom:none;padding-top:16px;margin-top:8px}
+.calc-result-row.total .calc-result-val{font-family:var(--ff-display);font-size:26px;color:var(--gold);font-weight:600}
+.calc-result-lbl{font-size:13px;color:rgba(255,255,255,0.5)}
+.calc-result-val{font-size:15px;color:var(--white);font-weight:500}
+.calc-info{padding:32px 0}
+.calc-info h3{font-family:var(--ff-display);font-size:28px;color:var(--navy);margin-bottom:16px}
+.calc-info p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.calc-info ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.calc-info ul li{font-size:14px;color:var(--muted);display:flex;gap:8px}
+.calc-info ul li::before{content:'→';color:var(--gold);flex-shrink:0}
+
+/* ── WHY US ── */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:8px;overflow:hidden;margin-top:60px}
+.why-item{background:var(--white);padding:36px 28px}
+.why-num{font-family:var(--ff-display);font-size:13px;color:var(--gold);letter-spacing:0.1em;font-weight:500;margin-bottom:12px;display:block}
+.why-title{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.why-desc{font-size:13.5px;color:var(--muted);line-height:1.65}
+
+/* ── TESTIMONIALS ── */
+.testimonials{background:var(--cream)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
+.testi-card{background:var(--white);border-radius:8px;padding:32px;border-bottom:3px solid var(--gold)}
+.testi-stars{display:flex;gap:3px;margin-bottom:16px}
+.testi-star{color:var(--gold);font-size:16px}
+.testi-text{font-size:14.5px;color:var(--text);line-height:1.7;margin-bottom:20px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-avatar{width:42px;height:42px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--ff-display);font-size:17px;color:var(--gold);font-weight:600;flex-shrink:0}
+.testi-name{font-size:14px;font-weight:600;color:var(--navy)}
+.testi-detail{font-size:12px;color:var(--muted)}
+
+/* ── BANKS CAROUSEL ── */
+.banks{padding:0;background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden}
+.banks-header{text-align:center;padding:32px 40px 0;font-size:11px;letter-spacing:0.2em;color:var(--muted);text-transform:uppercase;font-weight:500;font-family:var(--ff-body)}
+.banks-track-wrap{position:relative;padding:20px 0 28px;overflow:hidden}
+.banks-track-wrap::before,.banks-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
+.banks-track-wrap::before{left:0;background:linear-gradient(to right,var(--white),transparent)}
+.banks-track-wrap::after{right:0;background:linear-gradient(to left,var(--white),transparent)}
+.banks-track{display:flex;gap:0;animation:scroll-banks 38s linear infinite;width:max-content}
+.banks-track:hover{animation-play-state:paused}
+.bank-logo-item{display:flex;align-items:center;justify-content:center;padding:0 36px;height:52px;flex-shrink:0;filter:grayscale(100%);opacity:0.45;transition:filter .3s,opacity .3s;cursor:default}
+.bank-logo-item:hover{filter:grayscale(0%);opacity:1}
+.bank-logo-item svg{height:28px;width:auto;max-width:110px}
+.bank-logo-item img{height:28px;width:auto;max-width:110px}
+/* wordmark fallback */
+.bank-wordmark{font-family:var(--ff-body);font-size:13px;font-weight:700;letter-spacing:0.04em;color:var(--navy);white-space:nowrap}
+@keyframes scroll-banks{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── PROCESS TIMELINE ── */
+.timeline{display:flex;flex-direction:column;gap:0;margin-top:60px;position:relative}
+.timeline::before{content:'';position:absolute;left:23px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--gold),rgba(184,145,42,0.1))}
+.tl-item{display:flex;gap:32px;padding-bottom:40px;position:relative}
+.tl-dot{width:48px;height:48px;border-radius:50%;background:var(--navy);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--ff-display);font-size:18px;font-weight:600;color:var(--gold);position:relative;z-index:1}
+.tl-content{padding-top:10px}
+.tl-title{font-size:17px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.tl-desc{font-size:14px;color:var(--muted);line-height:1.65}
+.tl-time{display:inline-block;font-size:11px;background:var(--cream);color:var(--gold);padding:3px 10px;border-radius:20px;margin-top:8px;font-weight:500;letter-spacing:0.06em}
+
+/* ── FAQ ── */
+.faq-section{background:var(--cream)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:60px}
+.faq-item{background:var(--white);border-radius:8px;padding:28px 28px;border-left:3px solid transparent;transition:border-color .2s}
+.faq-item:hover{border-left-color:var(--gold)}
+.faq-q{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.faq-a{font-size:14px;color:var(--muted);line-height:1.65}
+
+/* ── CTA SECTION ── */
+.cta-section{background:var(--navy);padding:100px 40px;text-align:center;position:relative;overflow:hidden}
+.cta-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0B1F3A,#102D50,#0B1F3A);opacity:0.9}
+.cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(184,145,42,0.15),transparent 70%);pointer-events:none}
+.cta-inner{position:relative;z-index:2;max-width:680px;margin:0 auto}
+.cta-inner .section-label{display:block;margin-bottom:16px}
+.cta-inner h2{font-family:var(--ff-display);font-size:clamp(32px,4vw,52px);color:var(--white);margin-bottom:20px;font-weight:600;line-height:1.15}
+.cta-inner h2 em{color:var(--gold);font-style:italic}
+.cta-inner p{font-size:16px;color:rgba(255,255,255,0.6);margin-bottom:40px;line-height:1.7}
+.cta-inner .btn-primary{font-size:16px;padding:18px 48px;letter-spacing:0.05em}
+
+/* ── FOOTER ── */
+footer{background:#060E1C;color:rgba(255,255,255,0.5);padding:60px 40px 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;max-width:1200px;margin:0 auto;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.footer-logo-main{font-family:var(--ff-display);font-size:24px;font-weight:600;color:var(--white);margin-bottom:4px}
+.footer-logo-sub{font-size:9px;letter-spacing:0.18em;color:var(--gold);text-transform:uppercase}
+.footer-about{font-size:13px;line-height:1.7;margin-top:16px;color:rgba(255,255,255,0.45);max-width:280px}
+.footer-col-title{font-size:11px;letter-spacing:0.15em;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:16px;font-weight:600}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{max-width:1200px;margin:24px auto 0;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.footer-legal{display:flex;gap:24px}
+.footer-legal a{color:rgba(255,255,255,0.35);text-decoration:none}
+.footer-ded{display:flex;align-items:center;gap:8px;font-size:11px;color:rgba(255,255,255,0.3)}
+.ded-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;opacity:0.6}
+
+/* ── ARABIC OVERRIDES ── */
+body.rtl nav{flex-direction:row-reverse}
+body.rtl .nav-links{flex-direction:row-reverse}
+body.rtl .hero-inner{direction:rtl}
+body.rtl .hero-eyebrow{flex-direction:row-reverse}
+body.rtl .section-label{letter-spacing:0}
+body.rtl .hero h1,body.rtl .section-title{font-family:var(--ff-arabic);font-weight:700}
+body.rtl .hero-sub,body.rtl .section-sub,body.rtl .step-desc,body.rtl .service-desc,body.rtl .faq-a,body.rtl .tl-desc,body.rtl .why-desc,body.rtl .testi-text{font-family:var(--ff-arabic);font-size:14px}
+body.rtl .hero-stat-lbl,body.rtl .trust-item,body.rtl .elig-list li,body.rtl .calc-result-lbl,body.rtl .footer-about{font-family:var(--ff-arabic)}
+body.rtl .step-title,body.rtl .service-title,body.rtl .why-title,body.rtl .tl-title,body.rtl .faq-q,body.rtl .testi-name{font-family:var(--ff-arabic);font-weight:600}
+body.rtl .timeline::before{left:auto;right:23px}
+body.rtl .tl-item{flex-direction:row-reverse}
+body.rtl .tl-content{text-align:right}
+body.rtl .hero-card-title,body.rtl .elig-col-title,body.rtl .calc-info h3{font-family:var(--ff-arabic)}
+body.rtl .hero-form-group label,body.rtl .calc-group label{font-family:var(--ff-arabic);letter-spacing:0}
+body.rtl .footer-grid{direction:rtl}
+body.rtl .hero-stat-val{font-family:var(--ff-display)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-right{display:none}
+  section{padding:70px 20px}
+  .steps{grid-template-columns:1fr 1fr}
+  .step:first-child,.step:last-child{border-radius:0}
+  .services-grid{grid-template-columns:1fr}
+  .elig-grid{grid-template-columns:1fr}
+  .calc-wrap{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .trust-bar{gap:20px;padding:16px 20px}
+  .banks-row{gap:20px}
+}
+
+/* ── ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- LANG BAR -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN — English</button>
+  <button class="lang-btn" onclick="setLang('ar')" id="btn-ar">AR — العربية</button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Escudo base -->
+      <path d="M19 3L5 9v10c0 8.5 5.9 16.4 14 18.9C27.1 35.4 33 27.5 33 19V9L19 3z" fill="rgba(184,145,42,0.15)" stroke="#B8912A" stroke-width="1.2"/>
+      <!-- Llave estilizada dentro del escudo -->
+      <circle cx="19" cy="15" r="4" stroke="#B8912A" stroke-width="1.5" fill="none"/>
+      <line x1="19" y1="19" x2="19" y2="27" stroke="#B8912A" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="19" y1="23" x2="22" y2="23" stroke="#B8912A" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="19" y1="26" x2="21.5" y2="26" stroke="#B8912A" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <div class="nav-logo-text">
+      <span class="nav-logo-main">Equity Gate</span>
+      <span class="nav-logo-sub" data-en="Mortgage UAE" data-ar="للرهن العقاري">Mortgage UAE</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services" data-en="Services" data-ar="خدماتنا">Services</a></li>
+    <li><a href="#how" data-en="How It Works" data-ar="كيف يعمل">How It Works</a></li>
+    <li><a href="#calculator" data-en="Calculator" data-ar="الحاسبة">Calculator</a></li>
+    <li><a href="#faq" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a></li>
+    <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta" data-en="Get Free Assessment" data-ar="تقييم مجاني">Get Free Assessment</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span data-en="Dubai's Equity Release Specialist" data-ar="متخصصون في تحرير رأس المال العقاري في دبي">Dubai's Equity Release Specialist</span>
+      </div>
+      <h1 data-en="Unlock the Capital <em>Locked</em> in Your Property" data-ar="حرِّر رأس المال <em>المحجوز</em> في عقارك">Unlock the Capital <em>Locked</em> in Your Property</h1>
+      <p class="hero-sub" data-en="Access up to 80% of your property's value as a lump-sum loan — without selling. We compare 20+ UAE banks to find you the best rate. Residents and non-residents welcome." data-ar="احصل على ما يصل إلى 80٪ من قيمة عقارك كقرض دفعة واحدة دون الحاجة إلى البيع. نقارن أكثر من 20 بنكاً في الإمارات للعثور على أفضل سعر. مرحباً بالمقيمين وغير المقيمين.">Access up to 80% of your property's value as a lump-sum loan — without selling. We compare 20+ UAE banks to find you the best rate. Residents and non-residents welcome.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary" data-en="Check My Eligibility" data-ar="تحقق من أهليتي">Check My Eligibility</a>
+        <a href="#how" class="btn-outline" data-en="How It Works" data-ar="كيف يعمل">How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-val">20+</span>
+          <span class="hero-stat-lbl" data-en="UAE Banks" data-ar="بنوك إماراتية">UAE Banks</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-val">80%</span>
+          <span class="hero-stat-lbl" data-en="Max LTV" data-ar="أعلى نسبة تمويل">Max LTV</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-val">AED 0</span>
+          <span class="hero-stat-lbl" data-en="Broker Fee" data-ar="رسوم الوساطة">Broker Fee</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-card-tag">
+          <div class="dot-pulse"></div>
+          <span data-en="Free — No obligation" data-ar="مجاناً — بدون التزام">Free — No obligation</span>
+        </div>
+        <p class="hero-card-title" data-en="Get Your Instant Estimate" data-ar="احصل على تقديرك الفوري">Get Your Instant Estimate</p>
+        <div class="hero-form-group">
+          <label data-en="Property Value (AED)" data-ar="قيمة العقار (درهم)">Property Value (AED)</label>
+          <input type="text" placeholder="e.g. 2,000,000" id="prop-val">
+        </div>
+        <div class="hero-form-group">
+          <label data-en="Your Profile" data-ar="ملفك الشخصي">Your Profile</label>
+          <select id="profile-sel">
+            <option value="resident" data-en="UAE Resident" data-ar="مقيم في الإمارات">UAE Resident</option>
+            <option value="nonresident" data-en="Non-Resident Investor" data-ar="مستثمر غير مقيم">Non-Resident Investor</option>
+          </select>
+        </div>
+        <div class="hero-form-group">
+          <label data-en="Purpose of Loan" data-ar="الغرض من القرض">Purpose of Loan</label>
+          <select>
+            <option data-en="Buy another property" data-ar="شراء عقار آخر">Buy another property</option>
+            <option data-en="Business capital" data-ar="رأس مال تجاري">Business capital</option>
+            <option data-en="Renovation" data-ar="تجديد">Renovation</option>
+            <option data-en="Debt consolidation" data-ar="توحيد الديون">Debt consolidation</option>
+            <option data-en="Other" data-ar="أخرى">Other</option>
+          </select>
+        </div>
+        <a href="#contact" class="btn-primary" id="hero-cta" data-en="Calculate My Loan" data-ar="احسب قرضي">Calculate My Loan</a>
+        <p class="hero-card-note" data-en="Your broker fee: AED 0. We're paid by the bank." data-ar="رسوم الوسيط: صفر درهم. نحصل على عمولتنا من البنك.">Your broker fee: AED 0. We're paid by the bank.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <span data-en="DED Licensed Broker" data-ar="وسيط مرخص من دائرة الاقتصاد">DED Licensed Broker</span>
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <span data-en="Pre-approval in 48 hours" data-ar="موافقة مبدئية خلال 48 ساعة">Pre-approval in 48 hours</span>
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+    <span data-en="20+ Partner Banks" data-ar="أكثر من 20 بنكاً شريكاً">20+ Partner Banks</span>
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+    <span data-en="Zero broker fee to you" data-ar="صفر رسوم وساطة عليك">Zero broker fee to you</span>
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    <span data-en="Dubai, UAE" data-ar="دبي، الإمارات العربية المتحدة">Dubai, UAE</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label" data-en="What We Do" data-ar="ما نقدمه">What We Do</p>
+      <h2 class="section-title" data-en="Your Property Is an Asset.<br><em>Let It Work for You.</em>" data-ar="عقارك أصل.<br><em>دعه يعمل لصالحك.</em>">Your Property Is an Asset.<br><em>Let It Work for You.</em></h2>
+      <p class="section-sub" data-en="We specialise in the one product most brokers treat as a footnote — releasing equity from property you already own." data-ar="نتخصص في المنتج الذي يتجاهله معظم الوسطاء — تحرير رأس المال من العقار الذي تمتلكه بالفعل.">We specialise in the one product most brokers treat as a footnote — releasing equity from property you already own.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 class="service-title" data-en="Equity Release" data-ar="تحرير رأس المال العقاري">Equity Release</h3>
+        <p class="service-desc" data-en="Your property is fully paid off? Release up to 70% of its value as cash — without selling. Use it to reinvest, expand your business, or fund any major expense." data-ar="عقارك مدفوع بالكامل؟ احصل على ما يصل إلى 70٪ من قيمته نقداً دون بيعه. استخدمه لإعادة الاستثمار أو توسيع أعمالك أو تمويل أي مصروف كبير.">Your property is fully paid off? Release up to 70% of its value as cash — without selling. Use it to reinvest, expand your business, or fund any major expense.</p>
+        <span class="service-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="service-title" data-en="Loan Against Property" data-ar="قرض مقابل العقار">Loan Against Property</h3>
+        <p class="service-desc" data-en="Still paying your mortgage? We arrange a top-up loan secured against your existing property's current market value — accessing the equity you've built." data-ar="لا تزال تسدد رهنك العقاري؟ نرتب لك قرضاً إضافياً مضموناً بالقيمة السوقية الحالية لعقارك، للوصول إلى رأس المال الذي بنيته.">Still paying your mortgage? We arrange a top-up loan secured against your existing property's current market value — accessing the equity you've built.</p>
+        <span class="service-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3 class="service-title" data-en="Non-Resident Financing" data-ar="تمويل غير المقيمين">Non-Resident Financing</h3>
+        <p class="service-desc" data-en="Own property in Dubai but live abroad? We manage the entire process remotely — from bank selection to final disbursement. Russian, Chinese and European investors especially welcome." data-ar="تمتلك عقاراً في دبي وتعيش في الخارج؟ ندير العملية بالكامل عن بُعد من اختيار البنك حتى الصرف النهائي.">Own property in Dubai but live abroad? We manage the entire process remotely — from bank selection to final disbursement. Russian, Chinese and European investors especially welcome.</p>
+        <span class="service-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3 class="service-title" data-en="Mortgage Refinancing" data-ar="إعادة التمويل العقاري">Mortgage Refinancing</h3>
+        <p class="service-desc" data-en="Is your fixed rate about to expire? We switch your mortgage to a better deal — often saving AED 1,000–3,000 per month without extending your loan term." data-ar="هل ينتهي سعرك الثابت قريباً؟ ننقل رهنك إلى عرض أفضل — مما يوفر في الغالب من 1000 إلى 3000 درهم شهرياً دون تمديد مدة القرض.">Is your fixed rate about to expire? We switch your mortgage to a better deal — often saving AED 1,000–3,000 per month without extending your loan term.</p>
+        <span class="service-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><polyline points="16 21 16 7 12 3 8 7 8 21"/></svg>
+        </div>
+        <h3 class="service-title" data-en="Commercial Property Loans" data-ar="قروض العقارات التجارية">Commercial Property Loans</h3>
+        <p class="service-desc" data-en="Offices, retail units, warehouses — we source financing for all commercial freehold property in the UAE, including equity release on commercial assets." data-ar="مكاتب ووحدات تجارية ومستودعات — نحصل على تمويل لجميع العقارات التجارية في الإمارات، بما في ذلك تحرير رأس المال من الأصول التجارية.">Offices, retail units, warehouses — we source financing for all commercial freehold property in the UAE, including equity release on commercial assets.</p>
+        <span class="service-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3 class="service-title" data-en="Portfolio & Multi-Unit Finance" data-ar="تمويل المحافظ والوحدات المتعددة">Portfolio & Multi-Unit Finance</h3>
+        <p class="service-desc" data-en="Own multiple properties? We structure portfolio loans that release equity across several assets simultaneously — ideal for investors looking to scale." data-ar="تمتلك عقارات متعددة؟ نهيكل قروض المحافظ التي تحرر رأس المال من عدة أصول في آنٍ واحد — مثالي للمستثمرين الراغبين في التوسع.">Own multiple properties? We structure portfolio loans that release equity across several assets simultaneously — ideal for investors looking to scale.</p>
+        <span class="service-link" data-en="Learn more →" data-ar="اعرف أكثر ←">Learn more →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANKS CAROUSEL -->
+<div class="banks">
+  <p class="banks-header" data-en="Our network — 20+ UAE licensed banks &amp; lenders" data-ar="شبكتنا — أكثر من 20 بنكاً ومؤسسة مالية مرخصة">Our network — 20+ UAE licensed banks &amp; lenders</p>
+  <div class="banks-track-wrap">
+    <div class="banks-track" id="banksTrack">
+
+      <!-- ── SET 1 ── -->
+      <!-- Emirates NBD -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="6" height="16" rx="1" fill="#C8102E"/>
+          <rect x="8" y="4" width="6" height="24" rx="1" fill="#C8102E"/>
+          <rect x="16" y="0" width="6" height="32" rx="1" fill="#C8102E"/>
+          <text x="28" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="12" fill="#0B1F3A">Emirates NBD</text>
+        </svg>
+      </div>
+
+      <!-- FAB -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="20" height="20" rx="3" fill="#00843D"/>
+          <text x="2" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="11" fill="white">FAB</text>
+          <text x="26" y="14" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">FIRST ABU DHABI</text>
+          <text x="26" y="24" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+
+      <!-- ADCB -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="14" cy="16" r="12" fill="#E8001D"/>
+          <text x="4" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="9" fill="white">ADCB</text>
+          <text x="30" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">ABU DHABI</text>
+          <text x="30" y="22" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">COMMERCIAL BANK</text>
+        </svg>
+      </div>
+
+      <!-- Mashreq -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 16 L8 4 L16 16 L8 28Z" fill="#EE2737"/>
+          <text x="22" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="13" fill="#0B1F3A">mashreq</text>
+        </svg>
+      </div>
+
+      <!-- HSBC -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,0 16,16 0,32" fill="#DB0011"/>
+          <polygon points="16,0 32,0 16,16" fill="#DB0011"/>
+          <polygon points="32,32 16,16 32,0" fill="#DB0011"/>
+          <polygon points="16,32 0,32 16,16" fill="#DB0011"/>
+          <text x="38" y="21" font-family="Inter,sans-serif" font-weight="800" font-size="14" fill="#0B1F3A">HSBC</text>
+        </svg>
+      </div>
+
+      <!-- RAKBANK -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="22" height="20" rx="3" fill="#005BAC"/>
+          <text x="2" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="8.5" fill="white">RAK</text>
+          <text x="27" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="13" fill="#005BAC">RAKBANK</text>
+        </svg>
+      </div>
+
+      <!-- ADIB -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 28 Q16 0 32 28" stroke="#00843D" stroke-width="3" fill="none"/>
+          <text x="36" y="14" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">ABU DHABI ISLAMIC</text>
+          <text x="36" y="24" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+
+      <!-- DIB -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="3" fill="#006838"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">DIB</text>
+          <text x="33" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">DUBAI ISLAMIC</text>
+          <text x="33" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+
+      <!-- CBD -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="3" fill="#0B1F3A"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">CBD</text>
+          <text x="33" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">COMMERCIAL BANK</text>
+          <text x="33" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">OF DUBAI</text>
+        </svg>
+      </div>
+
+      <!-- Citibank -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 6 A10 10 0 1 0 14 26" stroke="#003B8E" stroke-width="3" fill="none"/>
+          <rect x="18" y="14" width="12" height="3" rx="1.5" fill="#EE1C25"/>
+          <text x="32" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="13" fill="#003B8E">citi</text>
+        </svg>
+      </div>
+
+      <!-- Emirates Islamic -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 16 Q16 2 28 16 Q16 30 4 16Z" fill="#00843D"/>
+          <text x="34" y="13" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">EMIRATES</text>
+          <text x="34" y="23" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">ISLAMIC</text>
+        </svg>
+      </div>
+
+      <!-- Standard Chartered -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="12" width="24" height="8" rx="2" fill="#00AEF0"/>
+          <rect x="4" y="6" width="16" height="4" rx="2" fill="#00AEF0"/>
+          <rect x="4" y="22" width="16" height="4" rx="2" fill="#00AEF0"/>
+          <text x="30" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">STANDARD</text>
+          <text x="30" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">CHARTERED</text>
+        </svg>
+      </div>
+
+      <!-- Wio Bank -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="4" fill="#7B2D8B"/>
+          <text x="4" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">Wio</text>
+          <text x="33" y="21" font-family="Inter,sans-serif" font-weight="600" font-size="10" fill="#7B2D8B">Bank</text>
+        </svg>
+      </div>
+
+      <!-- ENBD Securities / NBF -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="3" fill="#C8102E"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">NBF</text>
+          <text x="33" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">NATIONAL</text>
+          <text x="33" y="21" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">BANK OF</text>
+          <text x="33" y="29" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">FUJAIRAH</text>
+        </svg>
+      </div>
+
+      <!-- IBAN / Ajman Bank -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="36" height="20" rx="3" fill="#004990"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="8" fill="white">AJMAN</text>
+          <text x="41" y="21" font-family="Inter,sans-serif" font-weight="600" font-size="10" fill="#004990">Bank</text>
+        </svg>
+      </div>
+
+      <!-- Sharjah Islamic Bank -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="22" height="20" rx="3" fill="#006838"/>
+          <text x="2" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="7.5" fill="white">SIB</text>
+          <text x="27" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">SHARJAH ISLAMIC</text>
+          <text x="27" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+
+      <!-- UNB -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="24" height="20" rx="3" fill="#003B8E"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="9" fill="white">UNB</text>
+          <text x="29" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">UNITED NATIONAL</text>
+          <text x="29" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+
+      <!-- Al Hilal Bank -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 16 A10 8 0 1 1 26 16" stroke="#00843D" stroke-width="2.5" fill="none"/>
+          <text x="30" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="11" fill="#0B1F3A">Al Hilal</text>
+        </svg>
+      </div>
+
+      <!-- Liv. (Emirates NBD digital) -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 70 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="4" width="32" height="24" rx="6" fill="#5B2D8E"/>
+          <text x="6" y="21" font-family="Inter,sans-serif" font-weight="800" font-size="12" fill="white">Liv.</text>
+          <text x="37" y="22" font-family="Inter,sans-serif" font-weight="600" font-size="9" fill="#5B2D8E">Bank</text>
+        </svg>
+      </div>
+
+      <!-- ADIA / Barclays placeholder — Al Maryah Community Bank -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="3" fill="#E8001D"/>
+          <text x="2" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="7" fill="white">MARYAH</text>
+          <text x="32" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">AL MARYAH</text>
+          <text x="32" y="22" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">COMMUNITY BANK</text>
+        </svg>
+      </div>
+
+      <!-- ── SET 2 (duplicado para loop infinito) ── -->
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="6" height="16" rx="1" fill="#C8102E"/>
+          <rect x="8" y="4" width="6" height="24" rx="1" fill="#C8102E"/>
+          <rect x="16" y="0" width="6" height="32" rx="1" fill="#C8102E"/>
+          <text x="28" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="12" fill="#0B1F3A">Emirates NBD</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="20" height="20" rx="3" fill="#00843D"/>
+          <text x="2" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="11" fill="white">FAB</text>
+          <text x="26" y="14" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">FIRST ABU DHABI</text>
+          <text x="26" y="24" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="14" cy="16" r="12" fill="#E8001D"/>
+          <text x="4" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="9" fill="white">ADCB</text>
+          <text x="30" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">ABU DHABI</text>
+          <text x="30" y="22" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">COMMERCIAL BANK</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 16 L8 4 L16 16 L8 28Z" fill="#EE2737"/>
+          <text x="22" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="13" fill="#0B1F3A">mashreq</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,0 16,16 0,32" fill="#DB0011"/>
+          <polygon points="16,0 32,0 16,16" fill="#DB0011"/>
+          <polygon points="32,32 16,16 32,0" fill="#DB0011"/>
+          <polygon points="16,32 0,32 16,16" fill="#DB0011"/>
+          <text x="38" y="21" font-family="Inter,sans-serif" font-weight="800" font-size="14" fill="#0B1F3A">HSBC</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="22" height="20" rx="3" fill="#005BAC"/>
+          <text x="2" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="8.5" fill="white">RAK</text>
+          <text x="27" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="13" fill="#005BAC">RAKBANK</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 28 Q16 0 32 28" stroke="#00843D" stroke-width="3" fill="none"/>
+          <text x="36" y="14" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">ABU DHABI ISLAMIC</text>
+          <text x="36" y="24" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="3" fill="#006838"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">DIB</text>
+          <text x="33" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">DUBAI ISLAMIC</text>
+          <text x="33" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="3" fill="#0B1F3A"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">CBD</text>
+          <text x="33" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">COMMERCIAL BANK</text>
+          <text x="33" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">OF DUBAI</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 6 A10 10 0 1 0 14 26" stroke="#003B8E" stroke-width="3" fill="none"/>
+          <rect x="18" y="14" width="12" height="3" rx="1.5" fill="#EE1C25"/>
+          <text x="32" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="13" fill="#003B8E">citi</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 16 Q16 2 28 16 Q16 30 4 16Z" fill="#00843D"/>
+          <text x="34" y="13" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">EMIRATES</text>
+          <text x="34" y="23" font-family="Inter,sans-serif" font-weight="700" font-size="7.5" fill="#0B1F3A">ISLAMIC</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="12" width="24" height="8" rx="2" fill="#00AEF0"/>
+          <rect x="4" y="6" width="16" height="4" rx="2" fill="#00AEF0"/>
+          <rect x="4" y="22" width="16" height="4" rx="2" fill="#00AEF0"/>
+          <text x="30" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">STANDARD</text>
+          <text x="30" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="7" fill="#0B1F3A">CHARTERED</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="4" fill="#7B2D8B"/>
+          <text x="4" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">Wio</text>
+          <text x="33" y="21" font-family="Inter,sans-serif" font-weight="600" font-size="10" fill="#7B2D8B">Bank</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="28" height="20" rx="3" fill="#C8102E"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="10" fill="white">NBF</text>
+          <text x="33" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">NATIONAL BANK</text>
+          <text x="33" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">OF FUJAIRAH</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 16 A10 8 0 1 1 26 16" stroke="#00843D" stroke-width="2.5" fill="none"/>
+          <text x="30" y="21" font-family="Inter,sans-serif" font-weight="700" font-size="11" fill="#0B1F3A">Al Hilal</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 70 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="4" width="32" height="24" rx="6" fill="#5B2D8E"/>
+          <text x="6" y="21" font-family="Inter,sans-serif" font-weight="800" font-size="12" fill="white">Liv.</text>
+          <text x="37" y="22" font-family="Inter,sans-serif" font-weight="600" font-size="9" fill="#5B2D8E">Bank</text>
+        </svg>
+      </div>
+      <div class="bank-logo-item">
+        <svg viewBox="0 0 90 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="6" width="24" height="20" rx="3" fill="#003B8E"/>
+          <text x="3" y="20" font-family="Inter,sans-serif" font-weight="800" font-size="9" fill="white">UNB</text>
+          <text x="29" y="13" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">UNITED NATIONAL</text>
+          <text x="29" y="23" font-family="Inter,sans-serif" font-weight="600" font-size="6.5" fill="#0B1F3A">BANK</text>
+        </svg>
+      </div>
+
+    </div><!-- /banks-track -->
+  </div><!-- /banks-track-wrap -->
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label" data-en="The Process" data-ar="العملية">The Process</p>
+      <h2 class="section-title" data-en="From enquiry to funds in<br><em>as little as 2 weeks</em>" data-ar="من الاستفسار إلى الحصول على الأموال<br><em>في أسبوعين فقط</em>">From enquiry to funds in<br><em>as little as 2 weeks</em></h2>
+    </div>
+    <div class="steps fade-up">
+      <div class="step">
+        <span class="step-num">01</span>
+        <div class="step-accent"></div>
+        <h3 class="step-title" data-en="Free consultation" data-ar="استشارة مجانية">Free consultation</h3>
+        <p class="step-desc" data-en="We review your property details, income structure and loan goal. 20-minute call, zero cost." data-ar="نراجع تفاصيل عقارك وهيكل دخلك وهدف قرضك. مكالمة مدتها 20 دقيقة، بدون أي تكلفة.">We review your property details, income structure and loan goal. 20-minute call, zero cost.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <div class="step-accent"></div>
+        <h3 class="step-title" data-en="Bank matching" data-ar="مطابقة البنوك">Bank matching</h3>
+        <p class="step-desc" data-en="We identify the 3 best lenders for your profile from 20+ banks and present competing offers side by side." data-ar="نحدد أفضل 3 مُقرضين لملفك من بين أكثر من 20 بنكاً ونعرض العروض المتنافسة جنباً إلى جنب.">We identify the 3 best lenders for your profile from 20+ banks and present competing offers side by side.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <div class="step-accent"></div>
+        <h3 class="step-title" data-en="Documentation" data-ar="التوثيق">Documentation</h3>
+        <p class="step-desc" data-en="Submit once — we handle the paperwork with all banks simultaneously. Valuation arranged and managed by us." data-ar="قدِّم مرة واحدة — نتولى الأوراق مع جميع البنوك في آنٍ واحد. التقييم يُرتَّب ويُدار بواسطتنا.">Submit once — we handle the paperwork with all banks simultaneously. Valuation arranged and managed by us.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <div class="step-accent"></div>
+        <h3 class="step-title" data-en="Disbursement" data-ar="الصرف">Disbursement</h3>
+        <p class="step-desc" data-en="Funds transferred to your account. Process takes 2–4 weeks from first call to final transfer." data-ar="تحويل الأموال إلى حسابك. تستغرق العملية من أسبوعين إلى أربعة أسابيع من المكالمة الأولى حتى التحويل النهائي.">Funds transferred to your account. Process takes 2–4 weeks from first call to final transfer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="eligibility" id="eligibility">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label" data-en="Who Qualifies" data-ar="من يستوفي الشروط">Who Qualifies</p>
+      <h2 class="section-title" data-en="Residents, Non-Residents,<br><em>Business Owners</em>" data-ar="المقيمون وغير المقيمون<br><em>وأصحاب الأعمال</em>">Residents, Non-Residents,<br><em>Business Owners</em></h2>
+      <p class="section-sub" data-en="UAE banks have different criteria for different profiles. We know exactly which bank suits yours." data-ar="تمتلك البنوك الإماراتية معايير مختلفة لملفات مختلفة. نعرف بالضبط أي بنك يناسب ملفك.">UAE banks have different criteria for different profiles. We know exactly which bank suits yours.</p>
+    </div>
+    <div class="elig-grid fade-up">
+      <div class="elig-col">
+        <p class="elig-col-title" data-en="Residents" data-ar="المقيمون">Residents</p>
+        <ul class="elig-list">
+          <li><div class="elig-check"></div><span data-en="UAE resident visa holder" data-ar="حامل تأشيرة إقامة في الإمارات">UAE resident visa holder</span></li>
+          <li><div class="elig-check"></div><span data-en="Age 21–65 at loan maturity (70 for self-employed)" data-ar="العمر من 21 إلى 65 عند استحقاق القرض (70 لأصحاب العمل الحر)">Age 21–65 at loan maturity (70 for self-employed)</span></li>
+          <li><div class="elig-check"></div><span data-en="Minimum monthly income AED 10,000" data-ar="الحد الأدنى للدخل الشهري 10,000 درهم">Minimum monthly income AED 10,000</span></li>
+          <li><div class="elig-check"></div><span data-en="Freehold property in approved UAE zones" data-ar="عقار بملكية حرة في مناطق الإمارات المعتمدة">Freehold property in approved UAE zones</span></li>
+          <li><div class="elig-check"></div><span data-en="Up to 80% LTV (salaried) or 65% LTV (self-employed)" data-ar="حتى 80٪ نسبة القرض إلى القيمة (موظفون) أو 65٪ (أصحاب عمل حر)">Up to 80% LTV (salaried) or 65% LTV (self-employed)</span></li>
+        </ul>
+        <div class="ltv-bar-wrap">
+          <div class="ltv-label"><span data-en="Salaried LTV" data-ar="نسبة القرض - موظف">Salaried LTV</span><span>80%</span></div>
+          <div class="ltv-track"><div class="ltv-fill" style="width:80%"></div></div>
+          <div class="ltv-label" style="margin-top:10px"><span data-en="Self-employed LTV" data-ar="نسبة القرض - عمل حر">Self-employed LTV</span><span>65%</span></div>
+          <div class="ltv-track"><div class="ltv-fill" style="width:65%"></div></div>
+        </div>
+      </div>
+      <div class="elig-col">
+        <p class="elig-col-title" data-en="Non-Residents" data-ar="غير المقيمين">Non-Residents</p>
+        <ul class="elig-list">
+          <li><div class="elig-check"></div><span data-en="Foreign national owning freehold Dubai property" data-ar="مواطن أجنبي يمتلك عقاراً بملكية حرة في دبي">Foreign national owning freehold Dubai property</span></li>
+          <li><div class="elig-check"></div><span data-en="Age 21–65 at loan maturity" data-ar="العمر من 21 إلى 65 عند استحقاق القرض">Age 21–65 at loan maturity</span></li>
+          <li><div class="elig-check"></div><span data-en="Income verifiable from home country" data-ar="الدخل قابل للتحقق من بلد الإقامة">Income verifiable from home country</span></li>
+          <li><div class="elig-check"></div><span data-en="Property clear of legal disputes" data-ar="العقار خالٍ من النزاعات القانونية">Property clear of legal disputes</span></li>
+          <li><div class="elig-check"></div><span data-en="Up to 65% LTV — entire process manageable remotely" data-ar="حتى 65٪ نسبة قرض — يمكن إدارة العملية بالكامل عن بُعد">Up to 65% LTV — entire process manageable remotely</span></li>
+        </ul>
+        <div class="ltv-bar-wrap">
+          <div class="ltv-label"><span data-en="Non-resident LTV" data-ar="نسبة القرض - غير مقيم">Non-resident LTV</span><span>65%</span></div>
+          <div class="ltv-track"><div class="ltv-fill" style="width:65%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="calc-section" id="calculator">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label" data-en="Equity Calculator" data-ar="حاسبة رأس المال">Equity Calculator</p>
+      <h2 class="section-title" data-en="How Much Can You <em>Release?</em>" data-ar="كم يمكنك <em>تحريره؟</em>">How Much Can You <em>Release?</em></h2>
+    </div>
+    <div class="calc-wrap fade-up">
+      <div class="calc-card">
+        <div class="calc-group">
+          <label data-en="Property Value" data-ar="قيمة العقار">Property Value</label>
+          <div class="range-val" id="pv-display">AED 2,000,000</div>
+          <input type="range" min="500000" max="10000000" step="100000" value="2000000" id="pv-range" oninput="calcUpdate()">
+        </div>
+        <div class="calc-group">
+          <label data-en="Existing Mortgage Balance" data-ar="رصيد الرهن الحالي">Existing Mortgage Balance</label>
+          <div class="range-val" id="mb-display">AED 0</div>
+          <input type="range" min="0" max="3000000" step="50000" value="0" id="mb-range" oninput="calcUpdate()">
+        </div>
+        <div class="calc-group">
+          <label data-en="Your Profile" data-ar="ملفك الشخصي">Your Profile</label>
+          <select id="calc-profile" onchange="calcUpdate()">
+            <option value="0.8" data-en="UAE Resident (Salaried) — up to 80%" data-ar="مقيم في الإمارات (موظف) — حتى 80٪">UAE Resident (Salaried) — up to 80%</option>
+            <option value="0.65" data-en="UAE Resident (Self-employed) — up to 65%" data-ar="مقيم في الإمارات (عمل حر) — حتى 65٪">UAE Resident (Self-employed) — up to 65%</option>
+            <option value="0.65" data-en="Non-Resident Investor — up to 65%" data-ar="مستثمر غير مقيم — حتى 65٪">Non-Resident Investor — up to 65%</option>
+          </select>
+        </div>
+        <div class="calc-result">
+          <div class="calc-result-row">
+            <span class="calc-result-lbl" data-en="Max loan amount" data-ar="الحد الأقصى للقرض">Max loan amount</span>
+            <span class="calc-result-val" id="max-loan">AED 1,600,000</span>
+          </div>
+          <div class="calc-result-row">
+            <span class="calc-result-lbl" data-en="Less existing mortgage" data-ar="ناقص الرهن الحالي">Less existing mortgage</span>
+            <span class="calc-result-val" id="less-mort">AED 0</span>
+          </div>
+          <div class="calc-result-row">
+            <span class="calc-result-lbl" data-en="Est. monthly payment (4.5% / 15yr)" data-ar="الدفعة الشهرية التقديرية (4.5٪ / 15 سنة)">Est. monthly payment (4.5% / 15yr)</span>
+            <span class="calc-result-val" id="monthly">AED 12,236</span>
+          </div>
+          <div class="calc-result-row total">
+            <span class="calc-result-lbl" data-en="You could access" data-ar="يمكنك الحصول على">You could access</span>
+            <span class="calc-result-val" id="net-release">AED 1,600,000</span>
+          </div>
+        </div>
+        <p style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:12px;text-align:center" data-en="Indicative estimate. Subject to bank valuation and approval." data-ar="تقدير استرشادي. يخضع لتقييم البنك والموافقة.">Indicative estimate. Subject to bank valuation and approval.</p>
+      </div>
+      <div class="calc-info">
+        <h3 data-en="What can you do with your released equity?" data-ar="ماذا يمكنك أن تفعل برأس المال المُحرَّر؟">What can you do with your released equity?</h3>
+        <p data-en="With Dubai rental yields between 5–10% and loan rates around 4%, releasing equity to buy another property is often a positive-return decision." data-ar="مع عوائد إيجارية في دبي تتراوح بين 5-10٪ وأسعار قروض حول 4٪، فإن تحرير رأس المال لشراء عقار آخر غالباً ما يكون قراراً ذا عائد إيجابي.">With Dubai rental yields between 5–10% and loan rates around 4%, releasing equity to buy another property is often a positive-return decision.</p>
+        <ul>
+          <li data-en="Buy a second investment property in Dubai" data-ar="شراء عقار استثماري ثانٍ في دبي">Buy a second investment property in Dubai</li>
+          <li data-en="Fund business expansion or working capital" data-ar="تمويل توسيع الأعمال أو رأس المال التشغيلي">Fund business expansion or working capital</li>
+          <li data-en="Consolidate higher-rate personal debt" data-ar="توحيد الديون الشخصية ذات الفوائد الأعلى">Consolidate higher-rate personal debt</li>
+          <li data-en="Renovate to increase property value" data-ar="التجديد لزيادة قيمة العقار">Renovate to increase property value</li>
+          <li data-en="Diversify into stocks, gold, or other markets" data-ar="التنويع في الأسهم أو الذهب أو أسواق أخرى">Diversify into stocks, gold, or other markets</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label" data-en="Why Equity Gate" data-ar="لماذا Equity Gate">Why Equity Gate</p>
+      <h2 class="section-title" data-en="The broker that knows<br><em>equity release</em>" data-ar="الوسيط الذي يتقن<br><em>تحرير رأس المال</em>">The broker that knows<br><em>equity release</em></h2>
+    </div>
+    <div class="why-grid fade-up">
+      <div class="why-item">
+        <span class="why-num">01</span>
+        <h4 class="why-title" data-en="Zero fee to you" data-ar="بدون رسوم منك">Zero fee to you</h4>
+        <p class="why-desc" data-en="We are paid exclusively by the bank (0.5–1% of the loan). Your costs: AED 0. No hidden charges, no retainers." data-ar="نحصل على أتعابنا حصرياً من البنك (0.5-1٪ من القرض). تكاليفك: صفر درهم. لا رسوم خفية ولا عمولات مسبقة.">We are paid exclusively by the bank (0.5–1% of the loan). Your costs: AED 0. No hidden charges, no retainers.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">02</span>
+        <h4 class="why-title" data-en="Submit once, compare 20+" data-ar="قدِّم مرة واحدة، قارن أكثر من 20">Submit once, compare 20+</h4>
+        <p class="why-desc" data-en="One application. We present your file to every suitable bank simultaneously. You pick the best offer." data-ar="طلب واحد. نقدم ملفك لكل بنك مناسب في آنٍ واحد. أنت تختار أفضل عرض.">One application. We present your file to every suitable bank simultaneously. You pick the best offer.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">03</span>
+        <h4 class="why-title" data-en="Complex profiles welcome" data-ar="الملفات المعقدة مرحب بها">Complex profiles welcome</h4>
+        <p class="why-desc" data-en="Mixed income, business owners, multiple nationalities, co-owned properties — we know which bank accepts which profile. Direct bank applications don't." data-ar="دخل مختلط وأصحاب أعمال وجنسيات متعددة وعقارات مشتركة — نعرف أي بنك يقبل أي ملف. الطلبات المباشرة للبنوك لا تتيح ذلك.">Mixed income, business owners, multiple nationalities, co-owned properties — we know which bank accepts which profile. Direct bank applications don't.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">04</span>
+        <h4 class="why-title" data-en="48-hour pre-approval" data-ar="موافقة مبدئية خلال 48 ساعة">48-hour pre-approval</h4>
+        <p class="why-desc" data-en="We target pre-approval from the best-fit bank within 48 working hours of receiving your documentation. Speed without cutting corners." data-ar="نستهدف الحصول على الموافقة المبدئية من البنك الأنسب خلال 48 ساعة عمل من استلام وثائقك. سرعة دون تهاون.">We target pre-approval from the best-fit bank within 48 working hours of receiving your documentation. Speed without cutting corners.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">05</span>
+        <h4 class="why-title" data-en="Full remote management" data-ar="إدارة كاملة عن بُعد">Full remote management</h4>
+        <p class="why-desc" data-en="Non-resident? Every step — from document submission to bank negotiations — can be handled remotely. We manage it all." data-ar="غير مقيم؟ كل خطوة — من تقديم الوثائق إلى التفاوض مع البنوك — يمكن إدارتها عن بُعد. نتولى الأمر بالكامل.">Non-resident? Every step — from document submission to bank negotiations — can be handled remotely. We manage it all.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-num">06</span>
+        <h4 class="why-title" data-en="DED Licensed" data-ar="مرخص من دائرة الاقتصاد">DED Licensed</h4>
+        <p class="why-desc" data-en="Fully licensed under the Dubai Department of Economy & Tourism and registered with the UAE Central Bank broker registry." data-ar="مرخص بالكامل من دائرة الاقتصاد والسياحة في دبي ومسجل في سجل الوسطاء لدى مصرف الإمارات المركزي.">Fully licensed under the Dubai Department of Economy & Tourism and registered with the UAE Central Bank broker registry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label" data-en="Client Stories" data-ar="قصص العملاء">Client Stories</p>
+      <h2 class="section-title" data-en="They <em>unlocked</em> their equity.<br>So can you." data-ar="لقد <em>حرَّروا</em> رأس مالهم.<br>يمكنك ذلك أيضاً.">They <em>unlocked</em> their equity.<br>So can you.</h2>
+    </div>
+    <div class="testi-grid fade-up">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text" data-en="I had a fully paid apartment in JVC worth AED 1.1M and needed funds to open my second restaurant. Equity Gate arranged AED 680,000 within 18 days. I went directly to my bank first — they rejected me because of my mixed income structure. Equity Gate found a bank that understood self-employed profiles." data-ar="كان لديّ شقة مدفوعة بالكامل في JVC بقيمة 1.1 مليون درهم وكنت بحاجة إلى تمويل لافتتاح مطعمي الثاني. رتّب Equity Gate مبلغ 680,000 درهم خلال 18 يوماً. ذهبت مباشرة إلى بنكي أولاً — رفضوني بسبب هيكل دخلي المختلط. وجد Equity Gate بنكاً يفهم ملفات أصحاب الأعمال الحرة.">I had a fully paid apartment in JVC worth AED 1.1M and needed funds to open my second restaurant. Equity Gate arranged AED 680,000 within 18 days. I went directly to my bank first — they rejected me because of my mixed income structure. Equity Gate found a bank that understood self-employed profiles.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <p class="testi-name">Rajesh M.</p>
+            <p class="testi-detail" data-en="Business owner · Indian expat, Dubai" data-ar="صاحب عمل · مغترب هندي، دبي">Business owner · Indian expat, Dubai</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text" data-en="I live in London and own a studio in Downtown Dubai as an investment. I needed to access equity to fund a UK property deposit. Equity Gate handled everything remotely — I never had to fly to Dubai. AED 420,000 was disbursed in 3 weeks." data-ar="أقيم في لندن وأمتلك استوديو في وسط دبي كاستثمار. كنت بحاجة إلى تحرير رأس مال لتمويل دفعة عقار في المملكة المتحدة. تولّى Equity Gate كل شيء عن بُعد — لم أضطر للسفر إلى دبي. تم صرف 420,000 درهم في 3 أسابيع.">I live in London and own a studio in Downtown Dubai as an investment. I needed to access equity to fund a UK property deposit. Equity Gate handled everything remotely — I never had to fly to Dubai. AED 420,000 was disbursed in 3 weeks.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <p class="testi-name">Sarah T.</p>
+            <p class="testi-detail" data-en="Non-resident investor · British, London" data-ar="مستثمرة غير مقيمة · بريطانية، لندن">Non-resident investor · British, London</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text" data-en="We had two properties in Dubai with significant equity but our bank told us equity release wasn't possible for non-GCC nationals. Equity Gate proved them wrong — they found a lender that handles multi-jurisdiction cases and we accessed AED 1.2M." data-ar="كان لدينا عقاران في دبي بهما رأس مال كبير لكن بنكنا أخبرنا أن تحرير رأس المال غير ممكن لغير مواطني دول مجلس التعاون الخليجي. أثبت Equity Gate خطأهم — وجدوا مقرضاً يتعامل مع الحالات متعددة الولايات القضائية وحصلنا على 1.2 مليون درهم.">We had two properties in Dubai with significant equity but our bank told us equity release wasn't possible for non-GCC nationals. Equity Gate proved them wrong — they found a lender that handles multi-jurisdiction cases and we accessed AED 1.2M.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <p class="testi-name">Alexei V.</p>
+            <p class="testi-detail" data-en="Portfolio investor · Russian, Moscow" data-ar="مستثمر محافظ · روسي، موسكو">Portfolio investor · Russian, Moscow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE DETAIL -->
+<section id="timeline">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start" class="fade-up">
+      <div>
+        <p class="section-label" data-en="Detailed Timeline" data-ar="الجدول الزمني التفصيلي">Detailed Timeline</p>
+        <h2 class="section-title" data-en="What happens at<br><em>every stage</em>" data-ar="ما يحدث في<br><em>كل مرحلة</em>">What happens at<br><em>every stage</em></h2>
+        <p class="section-sub" data-en="No surprises. Every step documented and communicated to you in real time." data-ar="لا مفاجآت. كل خطوة موثقة ومُبلَّغة إليك في الوقت الفعلي.">No surprises. Every step documented and communicated to you in real time.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot">1</div>
+          <div class="tl-content">
+            <h4 class="tl-title" data-en="Initial consultation & assessment" data-ar="الاستشارة الأولية والتقييم">Initial consultation & assessment</h4>
+            <p class="tl-desc" data-en="We review your property, income, nationality and goal. You receive a written indicative offer within 24 hours." data-ar="نراجع عقارك ودخلك وجنسيتك وهدفك. تتلقى عرضاً استرشادياً مكتوباً خلال 24 ساعة.">We review your property, income, nationality and goal. You receive a written indicative offer within 24 hours.</p>
+            <span class="tl-time" data-en="Day 1" data-ar="اليوم 1">Day 1</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">2</div>
+          <div class="tl-content">
+            <h4 class="tl-title" data-en="Document collection" data-ar="جمع الوثائق">Document collection</h4>
+            <p class="tl-desc" data-en="Passport, title deed, 6 months bank statements, salary certificate or business accounts. We tell you exactly what's needed." data-ar="جواز السفر وسند الملكية وكشوف حساب 6 أشهر وشهادة الراتب أو حسابات العمل. نخبرك بالضبط ما هو مطلوب.">Passport, title deed, 6 months bank statements, salary certificate or business accounts. We tell you exactly what's needed.</p>
+            <span class="tl-time" data-en="Days 1–3" data-ar="الأيام 1-3">Days 1–3</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">3</div>
+          <div class="tl-content">
+            <h4 class="tl-title" data-en="Bank submissions & pre-approval" data-ar="تقديم طلبات البنوك والموافقة المبدئية">Bank submissions & pre-approval</h4>
+            <p class="tl-desc" data-en="We submit your file to the 3 best-fit banks simultaneously. Target: pre-approval in 48 hours." data-ar="نقدم ملفك للبنوك الثلاثة الأنسب في آنٍ واحد. الهدف: موافقة مبدئية في 48 ساعة.">We submit your file to the 3 best-fit banks simultaneously. Target: pre-approval in 48 hours.</p>
+            <span class="tl-time" data-en="Days 3–5" data-ar="الأيام 3-5">Days 3–5</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">4</div>
+          <div class="tl-content">
+            <h4 class="tl-title" data-en="Property valuation" data-ar="تقييم العقار">Property valuation</h4>
+            <p class="tl-desc" data-en="Bank-instructed valuer inspects your property. We coordinate access and scheduling on your behalf." data-ar="يقوم المقيّم المعيَّن من البنك بفحص عقارك. نُنسِّق الدخول والجدولة نيابةً عنك.">Bank-instructed valuer inspects your property. We coordinate access and scheduling on your behalf.</p>
+            <span class="tl-time" data-en="Days 5–8" data-ar="الأيام 5-8">Days 5–8</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">5</div>
+          <div class="tl-content">
+            <h4 class="tl-title" data-en="Offer selection & legal" data-ar="اختيار العرض والإجراءات القانونية">Offer selection & legal</h4>
+            <p class="tl-desc" data-en="You review final offers side by side. Legal documents prepared and signed. Mortgage registered with DLD." data-ar="تراجع العروض النهائية جنباً إلى جنب. إعداد الوثائق القانونية والتوقيع عليها. تسجيل الرهن العقاري مع دائرة الأراضي والأملاك.">You review final offers side by side. Legal documents prepared and signed. Mortgage registered with DLD.</p>
+            <span class="tl-time" data-en="Days 8–14" data-ar="الأيام 8-14">Days 8–14</span>
+          </div>
+        </div>
+        <div class="tl-item" style="padding-bottom:0">
+          <div class="tl-dot" style="background:var(--gold);color:var(--navy)">✓</div>
+          <div class="tl-content">
+            <h4 class="tl-title" data-en="Funds disbursed" data-ar="صرف الأموال">Funds disbursed</h4>
+            <p class="tl-desc" data-en="Money in your account. Average 14–21 days from first consultation to completion." data-ar="الأموال في حسابك. في المتوسط من 14 إلى 21 يوماً من الاستشارة الأولى حتى الاكتمال.">Money in your account. Average 14–21 days from first consultation to completion.</p>
+            <span class="tl-time" data-en="Days 14–21" data-ar="الأيام 14-21">Days 14–21</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</p>
+      <h2 class="section-title" data-en="Questions we get<br><em>every day</em>" data-ar="أسئلة نتلقاها<br><em>كل يوم</em>">Questions we get<br><em>every day</em></h2>
+    </div>
+    <div class="faq-grid fade-up">
+      <div class="faq-item">
+        <p class="faq-q" data-en="Do I pay anything to Equity Gate?" data-ar="هل أدفع أي شيء لـ Equity Gate؟">Do I pay anything to Equity Gate?</p>
+        <p class="faq-a" data-en="No. Our service is completely free to you. We receive a commission from the bank (typically 0.5–1% of the loan amount) once your loan completes. The bank absorbs this cost — not you." data-ar="لا. خدمتنا مجانية تماماً بالنسبة لك. نتلقى عمولة من البنك (عادةً 0.5-1٪ من مبلغ القرض) عند اكتمال قرضك. يتحمل البنك هذه التكلفة — وليس أنت.">No. Our service is completely free to you. We receive a commission from the bank (typically 0.5–1% of the loan amount) once your loan completes. The bank absorbs this cost — not you.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q" data-en="Can I get an equity release loan if I live outside the UAE?" data-ar="هل يمكنني الحصول على قرض تحرير رأس مال إذا كنت أقيم خارج الإمارات؟">Can I get an equity release loan if I live outside the UAE?</p>
+        <p class="faq-a" data-en="Yes. Non-resident property owners can access up to 65% LTV. We manage the entire process remotely — including document submission, bank liaison, and legal coordination." data-ar="نعم. يمكن لمالكي العقارات من غير المقيمين الوصول إلى ما يصل إلى 65٪ من نسبة القرض إلى القيمة. ندير العملية بالكامل عن بُعد — بما في ذلك تقديم الوثائق والتواصل مع البنك والتنسيق القانوني.">Yes. Non-resident property owners can access up to 65% LTV. We manage the entire process remotely — including document submission, bank liaison, and legal coordination.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q" data-en="What is the minimum property value needed?" data-ar="ما الحد الأدنى لقيمة العقار المطلوب؟">What is the minimum property value needed?</p>
+        <p class="faq-a" data-en="Most banks require a minimum property value of AED 1,000,000 and a minimum loan of AED 250,000. We work across all price ranges up to AED 50M+." data-ar="تشترط معظم البنوك قيمة عقار لا تقل عن 1,000,000 درهم وحداً أدنى للقرض يبلغ 250,000 درهم. نعمل في جميع نطاقات الأسعار حتى 50 مليون درهم وأكثر.">Most banks require a minimum property value of AED 1,000,000 and a minimum loan of AED 250,000. We work across all price ranges up to AED 50M+.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q" data-en="My property already has a mortgage. Can I still release equity?" data-ar="عقاري مرهون بالفعل. هل يمكنني تحرير رأس المال؟">My property already has a mortgage. Can I still release equity?</p>
+        <p class="faq-a" data-en="Yes — this is called a top-up loan. The bank will assess the current value of your property and allow you to borrow against the equity above your existing mortgage balance, up to the LTV cap." data-ar="نعم — يُسمى هذا قرض الإضافة. سيقيّم البنك القيمة الحالية لعقارك ويسمح لك بالاقتراض مقابل رأس المال فوق رصيد رهنك الحالي، حتى حد نسبة القرض إلى القيمة.">Yes — this is called a top-up loan. The bank will assess the current value of your property and allow you to borrow against the equity above your existing mortgage balance, up to the LTV cap.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q" data-en="What are the costs besides the loan itself?" data-ar="ما هي التكاليف بخلاف القرض نفسه؟">What are the costs besides the loan itself?</p>
+        <p class="faq-a" data-en="Standard costs: 1% bank arrangement fee, 0.25% DLD mortgage registration fee, and AED 2,500–3,500 for property valuation. We present a full cost breakdown before you commit to anything." data-ar="التكاليف القياسية: رسوم ترتيب البنك 1٪، ورسوم تسجيل الرهن العقاري لدائرة الأراضي 0.25٪، ومن 2,500 إلى 3,500 درهم لتقييم العقار. نقدم تفصيلاً كاملاً للتكاليف قبل أن تلتزم بأي شيء.">Standard costs: 1% bank arrangement fee, 0.25% DLD mortgage registration fee, and AED 2,500–3,500 for property valuation. We present a full cost breakdown before you commit to anything.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q" data-en="What if I was rejected by my bank directly?" data-ar="ماذا لو رفضني بنكي مباشرة؟">What if I was rejected by my bank directly?</p>
+        <p class="faq-a" data-en="A rejection from one bank doesn't mean rejection from all. Different banks have different criteria for self-employed income, non-residents, mixed nationalities, and property types. We reanalyse your file and target the right lender." data-ar="رفض بنك واحد لا يعني رفض الجميع. لكل بنك معايير مختلفة للدخل الحر وغير المقيمين والجنسيات المختلطة وأنواع العقارات. نُعيد تحليل ملفك ونستهدف المُقرض الصحيح.">A rejection from one bank doesn't mean rejection from all. Different banks have different criteria for self-employed income, non-residents, mixed nationalities, and property types. We reanalyse your file and target the right lender.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q" data-en="How long does the whole process take?" data-ar="كم يستغرق الإجراء بأكمله؟">How long does the whole process take?</p>
+        <p class="faq-a" data-en="For straightforward cases: 14–21 days from first call to fund disbursement. Complex cases or non-residents: 21–35 days. We have completed loans in as little as 10 working days." data-ar="للحالات المباشرة: من 14 إلى 21 يوماً من المكالمة الأولى حتى صرف الأموال. الحالات المعقدة أو غير المقيمين: من 21 إلى 35 يوماً. أكملنا قروضاً في أقل من 10 أيام عمل.">For straightforward cases: 14–21 days from first call to fund disbursement. Complex cases or non-residents: 21–35 days. We have completed loans in as little as 10 working days.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q" data-en="Is my information kept confidential?" data-ar="هل تُحفظ معلوماتي سرية؟">Is my information kept confidential?</p>
+        <p class="faq-a" data-en="Absolutely. Your financial and personal information is shared only with banks you explicitly approve, and only for the purpose of your loan application. We never sell or share data with third parties." data-ar="بالتأكيد. تُشارَك معلوماتك المالية والشخصية فقط مع البنوك التي توافق عليها صراحةً، وفقط لغرض طلب قرضك. لا نبيع أو نشارك البيانات مع أطراف ثالثة.">Absolutely. Your financial and personal information is shared only with banks you explicitly approve, and only for the purpose of your loan application. We never sell or share data with third parties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="cta-bg"></div>
+  <div class="cta-glow"></div>
+  <div class="cta-inner fade-up">
+    <span class="section-label" data-en="Start Today" data-ar="ابدأ اليوم">Start Today</span>
+    <h2 data-en="Your property is worth more<br>than <em>you think.</em>" data-ar="عقارك يستحق أكثر<br>مما <em>تظن.</em>">Your property is worth more<br>than <em>you think.</em></h2>
+    <p data-en="Get a free, no-obligation assessment in 24 hours. We tell you exactly how much you can release, which banks are best for your profile, and what it costs — before you sign anything." data-ar="احصل على تقييم مجاني وغير ملزم خلال 24 ساعة. نخبرك بالضبط بالمبلغ الذي يمكنك تحريره والبنوك الأفضل لملفك وتكاليف ذلك — قبل أن توقع على أي شيء.">Get a free, no-obligation assessment in 24 hours. We tell you exactly how much you can release, which banks are best for your profile, and what it costs — before you sign anything.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="mailto:hello@equitygate.ae" class="btn-primary" data-en="Email Us" data-ar="راسلنا">Email Us</a>
+      <a href="https://wa.me/971500000000" class="btn-outline" style="display:flex;align-items:center;gap:8px" data-en="WhatsApp Us" data-ar="تواصل عبر واتساب">WhatsApp Us</a>
+    </div>
+    <p style="margin-top:24px;font-size:13px;color:rgba(255,255,255,0.35)" data-en="Or call +971 4 000 0000 — Sunday to Thursday, 8am–6pm GST" data-ar="أو اتصل بـ +971 4 000 0000 — الأحد إلى الخميس، 8 صباحاً - 6 مساءً بتوقيت الخليج">Or call +971 4 000 0000 — Sunday to Thursday, 8am–6pm GST</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <svg width="32" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 3L5 9v10c0 8.5 5.9 16.4 14 18.9C27.1 35.4 33 27.5 33 19V9L19 3z" fill="rgba(184,145,42,0.15)" stroke="#B8912A" stroke-width="1.2"/>
+          <circle cx="19" cy="15" r="4" stroke="#B8912A" stroke-width="1.5" fill="none"/>
+          <line x1="19" y1="19" x2="19" y2="27" stroke="#B8912A" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="19" y1="23" x2="22" y2="23" stroke="#B8912A" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="19" y1="26" x2="21.5" y2="26" stroke="#B8912A" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <p class="footer-logo-main">Equity Gate</p>
+          <p class="footer-logo-sub" data-en="Mortgage UAE" data-ar="للرهن العقاري">Mortgage UAE</p>
+        </div>
+      </div>
+      <p class="footer-about" data-en="Dubai's specialist equity release and loan against property broker. We access 20+ UAE banks to find you the best deal — at zero cost to you." data-ar="وسيط متخصص في تحرير رأس المال والقروض العقارية في دبي. نصل إلى أكثر من 20 بنكاً في الإمارات للعثور على أفضل صفقة لك — بدون أي تكلفة عليك.">Dubai's specialist equity release and loan against property broker. We access 20+ UAE banks to find you the best deal — at zero cost to you.</p>
+    </div>
+    <div>
+      <p class="footer-col-title" data-en="Services" data-ar="الخدمات">Services</p>
+      <ul class="footer-links">
+        <li><a href="#services" data-en="Equity Release" data-ar="تحرير رأس المال">Equity Release</a></li>
+        <li><a href="#services" data-en="Loan Against Property" data-ar="قرض مقابل العقار">Loan Against Property</a></li>
+        <li><a href="#services" data-en="Non-Resident Finance" data-ar="تمويل غير المقيمين">Non-Resident Finance</a></li>
+        <li><a href="#services" data-en="Refinancing" data-ar="إعادة التمويل">Refinancing</a></li>
+        <li><a href="#services" data-en="Commercial Loans" data-ar="القروض التجارية">Commercial Loans</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title" data-en="Company" data-ar="الشركة">Company</p>
+      <ul class="footer-links">
+        <li><a href="#" data-en="About Us" data-ar="من نحن">About Us</a></li>
+        <li><a href="#" data-en="Our Team" data-ar="فريقنا">Our Team</a></li>
+        <li><a href="#" data-en="Partner Banks" data-ar="البنوك الشريكة">Partner Banks</a></li>
+        <li><a href="#" data-en="Blog & Insights" data-ar="المدونة والرؤى">Blog & Insights</a></li>
+        <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title" data-en="Contact" data-ar="التواصل">Contact</p>
+      <ul class="footer-links">
+        <li><a href="mailto:hello@equitygate.ae">hello@equitygate.ae</a></li>
+        <li><a href="tel:+97140000000">+971 4 000 0000</a></li>
+        <li><a href="https://wa.me/971500000000" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a></li>
+        <li><a href="#" data-en="Business Bay, Dubai, UAE" data-ar="بيزنس باي، دبي، الإمارات">Business Bay, Dubai, UAE</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-ded">
+      <div class="ded-dot"></div>
+      <span data-en="DED Licensed · UAE Central Bank Registered" data-ar="مرخص من دائرة الاقتصاد · مسجل في مصرف الإمارات المركزي">DED Licensed · UAE Central Bank Registered</span>
+    </div>
+    <div class="footer-legal">
+      <a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a>
+      <a href="#" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a>
+      <span data-en="© 2026 Equity Gate Mortgage" data-ar="© 2026 Equity Gate للرهن العقاري">© 2026 Equity Gate Mortgage</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── LANGUAGE SYSTEM ───────────────────────────────────────────────
+const translations = {
+  en: {}, ar: {}
+};
+
+function setLang(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val) {
+      if (el.tagName === 'INPUT' || el.tagName === 'OPTION') {
+        el.textContent = val;
+      } else {
+        el.innerHTML = val;
+      }
+    }
+  });
+  document.querySelectorAll('select option').forEach(opt => {
+    const val = opt.getAttribute('data-' + lang);
+    if (val) opt.textContent = val;
+  });
+  if (lang === 'ar') {
+    document.body.classList.add('rtl');
+    document.documentElement.setAttribute('lang', 'ar');
+    document.documentElement.setAttribute('dir', 'rtl');
+  } else {
+    document.body.classList.remove('rtl');
+    document.documentElement.setAttribute('lang', 'en');
+    document.documentElement.setAttribute('dir', 'ltr');
+  }
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+}
+
+// ── CALCULATOR ────────────────────────────────────────────────────
+function fmt(n) {
+  return 'AED ' + Math.round(n).toLocaleString('en-AE');
+}
+
+function calcUpdate() {
+  const pv = parseInt(document.getElementById('pv-range').value);
+  const mb = parseInt(document.getElementById('mb-range').value);
+  const ltv = parseFloat(document.getElementById('calc-profile').value);
+  document.getElementById('pv-display').textContent = fmt(pv);
+  document.getElementById('mb-display').textContent = fmt(mb);
+  const maxLoan = pv * ltv;
+  const net = Math.max(0, maxLoan - mb);
+  const r = 0.045 / 12;
+  const n = 180;
+  const monthly = net > 0 ? net * r / (1 - Math.pow(1 + r, -n)) : 0;
+  document.getElementById('max-loan').textContent = fmt(maxLoan);
+  document.getElementById('less-mort').textContent = '− ' + fmt(mb);
+  document.getElementById('monthly').textContent = fmt(monthly);
+  document.getElementById('net-release').textContent = fmt(net);
+}
+calcUpdate();
+
+// ── FADE IN ON SCROLL ─────────────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
